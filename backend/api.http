@@ -3,25 +3,26 @@ Content-Type: application/json
 
 
 {
-    "title": "Evento Teste",
-    "details": "Evento para apaixonados por programação",
-    "maximumAttendees": 1
+    "title": "Evento Teste 1",
+    "details": 123,
+    "maximumAttendees": 4
 }
 
 
 ###
-POST http://localhost:3333/events/16b42bc3-fc3f-4b34-a13b-95d157bb1ff3/attendees
+POST http://localhost:3333/events/5011ddb0-1867-45b8-b3e2-998495d1ec71/attendees
 Content-Type: application/json
+
 
 
 {
     "nome": "Erick Castilho Mestre",
-    "email": "erickcastilhomestre2@gmail.com"
+    "email": "erickcastilhomestre1@gmail.com"
 }
 
 
 ###
-GET http://localhost:3333/events/5a335412-56ea-47c4-b2c7-687028f85af0
+GET http://localhost:3333/events/5011ddb0-1867-45b8-b3e2-998495d1ec71
 
 
 
@@ -36,4 +37,4 @@ GET http://localhost:3333/attendees/2/check-in
 
 
 ###
-GET http://localhost:3333/events/5a335412-56ea-47c4-b2c7-687028f85af0/attendees
+GET http://localhost:3333/events/5011ddb0-1867-45b8-b3e2-998495d1ec7/attendees
